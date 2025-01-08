@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Online - Plateforme d'Apprentissage</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      }
+
+      .main-container {
+        background: linear-gradient(45deg, #34495e, white);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .logo-container {
+        margin-bottom: 3rem;
+      }
+
+      .logo-container img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
+      }
+
+      .logo-container h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+
+      .logo-container p {
+        color: #34495e;
+        font-size: 1.2rem;
+      }
+
+      .buttons-container {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .button {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .login {
+        background: linear-gradient(45deg, #34495e, white);
+        color: white;
+      }
+
+      .register {
+        background: #e74c3c;
+        color: white;
+      }
+
+      footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+      }
+
+      @media (max-width: 600px) {
+        .buttons-container {
+          flex-direction: column;
+          width: 100%;
+          max-width: 300px;
+        }
+
+        .button {
+          width: 100%;
+          text-align: center;
+        }
+
+        .logo-container h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="logo-container">
+        <img src="img.png" alt="Exam Online Logo" />
+        <h1>Exam Online</h1>
+        <p>Votre plateforme pour passer exmens en ligne</p>
+      </div>
+
+      <div class="buttons-container">
+        <a href="./views/auth/login.php" class="button login">Se connecter</a>
+      </div>
+    </main>
+  </body>
+</html>
